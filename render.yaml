@@ -29,7 +29,7 @@ services:
         fromService:
           type: web
           name: clipforge-frontend
-          property: hostURL
+          property: host
       - key: USE_IN_PROCESS_WORKER
         value: "false"
       - key: WHISPER_MODEL_SIZE
@@ -119,12 +119,12 @@ services:
         fromService:
           type: web
           name: clipforge-api
-          property: hostURL
+          property: host
       - key: BACKEND_API_URL
         fromService:
           type: web
           name: clipforge-api
-          property: hostURL
+          property: host
       - key: NEXT_PUBLIC_SUPABASE_URL
         sync: false
       - key: NEXT_PUBLIC_SUPABASE_ANON_KEY
